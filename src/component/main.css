@@ -1,0 +1,11 @@
+.card {
+    position: relative;
+    overflow: hidden; /* Ensure video doesn't overflow the card */
+  }
+  
+  .card video {
+    width: 100%; /* Ensure the video fills the entire width of the card */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the video covers the entire space without stretching */
+  }
+  
