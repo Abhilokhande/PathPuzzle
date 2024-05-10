@@ -24,7 +24,7 @@ export default function Firstpage() {
       <div className="card text-bg-dark">
   <img src={process.env.PUBLIC_URL + 'Image/Ai.jpg'} className="card-img" alt="..."/>
   <div className="card-img-overlay">
-  <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px',color:'white'}}>
+  <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px',color:'White',fontWeight:'bold'}}>
       <h2 style={{color:'red',fontWeight: 'bold',fontSize:'50px'}}>A* Algorithm Overview</h2>
       <div style={{ fontSize: '16px', lineHeight: '1.6', textAlign: 'left' }}>
         <h3 style={{color:'yellow' ,fontWeight: 'bold'}}>Introduction</h3>

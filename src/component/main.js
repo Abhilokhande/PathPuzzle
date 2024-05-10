@@ -1,9 +1,10 @@
 import React from 'react';
 import About from './About';
-
+import Path from './path';
 const Main = () => {
-    return (
+    return (<div>
        <About/>
+       </div>
     );
 }
 

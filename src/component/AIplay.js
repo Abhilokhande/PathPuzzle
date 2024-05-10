@@ -136,33 +136,34 @@ const AStarAlgorithmVisualization = () => {
         </div>
       </nav>
       <div class="card text-bg-dark">
-  <img src={process.env.PUBLIC_URL + 'Image/Ai1.jpg'} class="card-img" alt="..."/>
-  <div class="card-img-overlay">
-      <h1>A* Algorithm Visualization</h1>
-      
-      <div style={{ display: 'inline-grid', gridTemplateColumns: 'repeat(10, 50px)', gridGap: '1px', marginTop: '20px' }}>
-        {grid.map((row, rowIndex) => (
-          row.map((cell, colIndex) => (
-            <div
-              key={`${rowIndex}-${colIndex}`}
-              style={{
-                width: '50px',
-                height: '50px',
-                backgroundColor: cell === 'start' ? '#00f' : cell === 'goal' ? '#f00' : cell === 'obstacle' ? '#000' : cell === 'path' ? '#0f0' : '#ddd',
-                border: '1px solid #999',
-                transition: 'background-color 0.3s',
-              }}
-              onClick={() => setNode(rowIndex, colIndex)}
-            ></div>
-          ))
-        ))}
-      </div><br/>
-      <button type="button" class="btn btn-danger" style={{margin:'20px'}} onClick={startAStar}>Start</button>
-      <button type="button" class="btn btn-warning" onClick={resetGrid}>Reset</button><br/>
-    </div>
-    </div>
-    </div>
+        <img src={process.env.PUBLIC_URL + 'Image/Ai1.jpg'} class="card-img" alt="..." />
+        <div class="card-img-overlay">
+          <h1>A* Algorithm Visualization</h1>
 
+
+
+          <div style={{ display: 'inline-grid', gridTemplateColumns: 'repeat(10, 50px)', gridGap: '1px', marginTop: '20px' }}>
+            {grid.map((row, rowIndex) => (
+              row.map((cell, colIndex) => (
+                <div
+                  key={`${rowIndex}-${colIndex}`}
+                  style={{
+                    width: '50px',
+                    height: '50px',
+                    backgroundColor: cell === 'start' ? '#00f' : cell === 'goal' ? '#f00' : cell === 'obstacle' ? '#000' : cell === 'path' ? 'yellow' : '#ddd',
+                    border: '1px solid #999',
+                    transition: 'background-color 0.3s',
+                  }}
+                  onClick={() => setNode(rowIndex, colIndex)}
+                ></div>
+              ))
+            ))}
+          </div><br />
+          <button type="button" class="btn btn-danger" style={{ margin: '20px' }} onClick={startAStar}>Start</button>
+          <button type="button" class="btn btn-warning" onClick={resetGrid}>Reset</button><br />
+        </div>
+      </div>
+    </div>
   );
 };
 
